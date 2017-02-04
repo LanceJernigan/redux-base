@@ -2,7 +2,7 @@ import React from 'react'
 import {render} from 'react-dom'
 import {Provider} from 'react-redux'
 import {Router, Route, browserHistory} from 'react-router'
-import {createStore} from 'redux'
+import {createStore,combineReducers, applyMiddleware} from 'redux'
 import {syncHistoryWithStore,routerReducer} from 'react-router-redux'
 
 const App = props => (
@@ -11,9 +11,9 @@ const App = props => (
   </div>
 )
 
-const store = createStore({
+const store = createStore(combineReducers({
   routing: routerReducer
-})
+}))
 
 const history = syncHistoryWithStore(browserHistory, store)
 
