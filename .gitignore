@@ -1,0 +1,6 @@
+# Folders
+node_modules/
+.idea/
+# File Naming/Types
+*.private.*
+*.log
