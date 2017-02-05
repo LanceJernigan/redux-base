@@ -15,6 +15,7 @@
   },
   "rules": {
     "semi": ["error","never"],
-    "no-console": "off"
+    "no-console": "off",
+    "no-mixed-spaces-and-tabs": "off"
   }
 }

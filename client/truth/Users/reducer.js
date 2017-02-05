@@ -1,4 +1,4 @@
-import {ADD_USER,DELETE_USER,UPDATE_USER} from '../../actions/Users/index'
+import {ADD_USER,DELETE_USER,UPDATE_USER} from './actions'
 
 const initialState = [{
 	_id: 1,
